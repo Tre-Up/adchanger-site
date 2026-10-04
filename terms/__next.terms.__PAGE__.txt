@@ -1,0 +1,43 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/17ehxus3dp3vn.js"],""]
+3:I[5500,["/_next/static/chunks/17ehxus3dp3vn.js"],"Image"]
+4:I[45305,["/_next/static/chunks/17ehxus3dp3vn.js"],"MotionController"]
+5:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+a:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+b:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+9:X
+22:X
+22:C
+0:{"buildId":"hTApzGLGetLAQ3-Z4wlhL","data":[{"rsc":["$","$1","c",{"children":[[["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","header",null,{"className":"site-header","data-site-header":true,"children":["$","div",null,{"className":"container site-header__inner","children":[["$","$L2",null,{"aria-label":"AdChanger home","className":"brand","href":"/","children":[["$","$L3",null,{"className":"brand__mark","src":"/brand/adchanger-mark.webp","alt":"","width":21,"height":24,"style":{"height":24},"unoptimized":true}],["$","span",null,{"className":"brand__name","children":"AdChanger"}]]}],["$","div",null,{"className":"site-header__nav","children":[["$","nav",null,{"className":"site-header__links","aria-label":"Sections","children":[["$","a","/#try",{"className":"site-header__link","href":"/#try","children":"Try it"}],["$","a","/#reach",{"className":"site-header__link","href":"/#reach","data-only":"advertiser","children":"Who sees it"}],["$","a","/#how",{"className":"site-header__link","href":"/#how","data-only":"advertiser","children":"Pricing"}],["$","a","/#results",{"className":"site-header__link","href":"/#results","data-only":"advertiser","children":"The app"}],["$","a","/#earn",{"className":"site-header__link","href":"/#earn","data-only":"earner","children":"What you earn"}],["$","a","/#app",{"className":"site-header__link","href":"/#app","data-only":"earner","children":"The app"}],["$","a","/#privacy",{"className":"site-header__link","href":"/#privacy","data-only":"earner","children":"Privacy"}]]}],["$","a",null,{"className":"button button--primary button--small","href":"mailto:company@adchanger.net?subject=Early%20access%3A%20Download%20for%20Mac","children":"Get early access"}]]}]]}]}],["$","main",null,{"id":"main","children":["$","section",null,{"className":"section","children":["$","div",null,{"className":"container reading-page","children":[["$","p",null,{"className":"eyebrow","children":"Terms"}],["$","h1",null,{"children":"Terms placeholder"}],["$","div",null,{"className":"status-panel status-panel--warning","children":[["$","p",null,{"className":"status-panel__title","children":"Legal review required before paid launch"}],["$","div",null,{"className":"status-panel__body","children":"This route intentionally does not invent binding legal terms. Production terms must be reviewed against the actual launch market, payment flow, payout model, privacy notice, advertiser policy, and product availability."}],"$undefined"]}]]}]}]}],["$","footer",null,{"className":"site-footer","children":["$","div",null,{"className":"container site-footer__inner","children":[["$","$L2",null,{"aria-label":"AdChanger home","className":"brand","href":"/","children":[["$","$L3",null,{"className":"brand__mark","src":"/brand/adchanger-mark.webp","alt":"","width":21,"height":24,"style":{"height":24},"unoptimized":true}],["$","span",null,{"className":"brand__name","children":"AdChanger"}]]}],["$","nav",null,{"className":"site-footer__links","aria-label":"Footer","children":[[["$","$L2","/privacy",{"className":"site-footer__link","href":"/privacy","children":"Privacy"}],["$","$L2","/terms",{"className":"site-footer__link","href":"/terms","children":"Terms"}]],["$","span",null,{"children":["© ",2026," AdChanger"]}]]}]]}]}],["$","$L4",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/17ehxus3dp3vn.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":"$@8","staleTime":"$9","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$La",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#000000"}],["$","meta","3",{"name":"color-scheme","content":"dark"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Terms | AdChanger"}],["$","meta","1",{"name":"description","content":"MacAd puts a brand in the Mac menu bar, next to the clock. Brands pay only for verified minutes on screen (£4 per 1,000); Mac users keep 65% for showing it. It never sees your screen. A product by AdChanger."}],["$","meta","2",{"name":"keywords","content":"AdChanger,MacAd,Mac menu bar ad,get paid to show ads on Mac,advertise on Mac,verified minute advertising"}],["$","link","3",{"rel":"canonical","href":"https://adchanger.net"}],["$","meta","4",{"name":"google-site-verification","content":"8yyIk7ToY5FC8Zqg0zk3n5A7R0QVBRUJBYZy6PHDLxA"}],"$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e"]}]}]}],null]}],"isPartial":"$@1f","staleTime":"$9","varyParams":null},{"rsc":"$L20","isPartial":"$@21","staleTime":"$9","varyParams":"$22"}],"isUpgradeableISRFallback":false,"a":"$@23","rootVaryParams":null,"needsRuntimeRequest":"$@24"}
+25:I[27201,["/_next/static/chunks/3fntmmi971322.js"],"IconMark"]
+26:I[39756,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+27:I[37457,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+7:null
+c:["$","meta","5",{"property":"og:title","content":"MacAd by AdChanger — Ads in the Mac menu bar, paid by the verified minute"}]
+d:["$","meta","6",{"property":"og:description","content":"MacAd puts a brand in the Mac menu bar, next to the clock. Brands pay only for verified minutes on screen (£4 per 1,000); Mac users keep 65% for showing it. It never sees your screen. A product by AdChanger."}]
+e:["$","meta","7",{"property":"og:url","content":"https://adchanger.net"}]
+f:["$","meta","8",{"property":"og:site_name","content":"AdChanger"}]
+10:["$","meta","9",{"property":"og:image","content":"https://adchanger.net/opengraph-image?155ceacd7febd6ef"}]
+11:["$","meta","10",{"property":"og:image:type","content":"image/png"}]
+12:["$","meta","11",{"property":"og:image:width","content":"1200"}]
+13:["$","meta","12",{"property":"og:image:height","content":"630"}]
+14:["$","meta","13",{"property":"og:type","content":"website"}]
+15:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+16:["$","meta","15",{"name":"twitter:title","content":"MacAd by AdChanger — Ads in the Mac menu bar, paid by the verified minute"}]
+17:["$","meta","16",{"name":"twitter:description","content":"MacAd puts a brand in the Mac menu bar, next to the clock. Brands pay only for verified minutes on screen (£4 per 1,000); Mac users keep 65% for showing it. It never sees your screen. A product by AdChanger."}]
+18:["$","meta","17",{"name":"twitter:image","content":"https://adchanger.net/opengraph-image?155ceacd7febd6ef"}]
+19:["$","meta","18",{"name":"twitter:image:type","content":"image/png"}]
+1a:["$","meta","19",{"name":"twitter:image:width","content":"1200"}]
+1b:["$","meta","20",{"name":"twitter:image:height","content":"630"}]
+1c:["$","link","21",{"rel":"icon","href":"/icon.png?icon.0pn_njeyfi_qe.png","sizes":"512x512","type":"image/png"}]
+1d:["$","link","22",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.06wdrku8-lth7.png","sizes":"180x180","type":"image/png"}]
+1e:["$","$L25","23",{}]
+20:["$","$1","c",{"children":[null,["$","$L26",null,{"parallelRouterKey":"children","template":["$","$L27",null,{}]}]]}]
+24:true
+9:300
+9:C
+23:0
+1f:"$undefined"
+21:"$undefined"
+8:"$undefined"
