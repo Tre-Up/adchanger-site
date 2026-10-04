@@ -3,7 +3,7 @@
 > AdChanger is a Mac app that puts one small, quiet ad in the menu bar and pays the person who shows it for every
 > verified minute. Businesses use the same app to build the ad, choose who sees it, and pay only for verified minutes.
 > Its first product is MacAd, the ad in the menu bar. Website: https://adchanger.net (download-only). Contact:
-> company@adchanger.net. Status: the Mac app is in active development; the download is not yet public.
+> yigit@adchanger.net. Status: the Mac app is in active development; the download is not yet public.
 
 ## Quick answers
 
