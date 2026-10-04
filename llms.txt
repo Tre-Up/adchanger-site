@@ -1,65 +1,30 @@
 # AdChanger
 
-> AdChanger is a Mac app that puts one small, quiet ad in the menu bar and pays the person who shows it for every
-> verified minute. Businesses use the same app to build the ad, choose who sees it, and pay only for verified minutes.
-> Its first product is MacAd, the ad in the menu bar. Website: https://adchanger.net (download-only). Contact:
-> yigit@adchanger.net. Status: the Mac app is in active development; the download is not yet public.
-
-## Quick answers
-
-- What is AdChanger? A Mac app for earning from one menu-bar ad (people with a Mac) and for advertising there
-  (businesses). The app is AdChanger; MacAd is the first product inside it, the ad in the menu bar.
-- Is it safe? It is built to see almost nothing. To count a minute it only checks whether the Mac is awake and in
-  use. It never reads the screen, keystrokes, microphone, camera, app contents or browsing history, and needs no
-  Accessibility or screen-recording permission. The ad can be paused, snoozed or stopped at any time. A person reviews
-  every ad before it runs.
-- How do payments work? Through Whop for now (Stripe, Wise and PayPal are coming soon). Whop takes the card;
-  AdChanger never sees card details. An advertiser's credit waits in AdChanger's Whop account and is spent minute by
-  minute; unspent credit stays theirs. Earners withdraw their share through Whop.
-- How much does it pay? An advertiser pays £0.004 / €0.005 / $0.006 per verified minute (£4 / €5 / $6 per 1,000).
-  The person showing the ad keeps 65% (£2.60 / €3.25 / $3.90 per 1,000 minutes); AdChanger keeps 35%. With an
-  affiliate code the split is 70% to the earner, 5% to the code's owner, 25% to AdChanger. The price does not change.
-- How much can one person earn in a day? One person is counted for at most 1,000 minutes of one ad a day
-  (16 h 40 min), so up to £2.60 (€3.25 / $3.90) a day from one ad. An 8-hour day with an ad running the whole time is
-  about £1.25 (roughly £37 over 30 days). Real earnings depend on the ads running for the person's country and on how
-  long the Mac is awake and in use; no fixed amount is promised.
-- What is a verified minute? A minute counts after the ad has been on screen for 60 seconds while the Mac is in use.
-  Stepping away pauses the clock; closing the lid resets it. Advertisers pay for verified minutes and nothing else.
-- When are earnings paid out? Payouts start at 10 in the currency (£10 / €10 / $10); each minute's earnings become
-  available after a 3-day hold.
-- Who can use it? Anyone with a Mac, in any country, can earn (an ad only shows in the countries its advertiser
-  picked). Advertisers can run ads anywhere in the world. The UK is the first market.
-- Which payment methods? Whop for now; Stripe, Wise and PayPal are planned ("soon"), so people anywhere can pay and be paid.
-- Why publish the numbers? Honesty: people who show the ad and businesses who pay for it should both know exactly
-  where every minute's money goes.
-
-## For advertisers
-
-- Build the ad inside the app, with a live preview in a real Mac menu bar. The ad is a 720 × 136 px still image.
-- Choose countries (any in the world), optional cities, what people do on their Mac, interests and buying plans.
-- A hard budget limit: nothing is charged while you build, and the bar stops when the budget is used.
-- Results: people who saw the ad, noticed it, clicked, reached your page and became customers; places (groups under 5
-  people are never shown separately); what they did on your site (measured by a small tag on your own site).
-- A person reviews every ad before it runs.
-
-## For people with a Mac (earners)
-
-- The ad lives in the menu bar next to the clock; there is no window to keep open.
-- Earnings by day, week, month and year in the app; ads you clicked are saved.
-- Affiliate: share a code; people who join with it keep 70% instead of 65% and the code's owner gets 5%.
+> AdChanger is a Mac app that shows one small, still ad in the macOS menu bar, next to the clock, and pays the person
+> who shows it for every verified minute. Businesses use the same app to build the ad, choose who sees it and pay
+> only for verified minutes. Its first product is MacAd, the menu-bar ad. Operated by Yiğit Ali Kurt; contact
+> yigit@adchanger.net. Status: early access (the download is not public yet; join by email).
 
 ## Key facts
 
-- Platform: macOS 12 or later, one small item in the menu bar (no other window, no pop-ups, no sound).
-- Names: the app you download is AdChanger; MacAd is the product inside it (so far the only one).
-- Money: advertisers pay the whole budget before a campaign runs; it is spent per verified minute. Unused budget
-  stays as credit for the next campaign. Card payments and payouts go through Whop.
-- Privacy: see https://adchanger.net/privacy.
+- Earning: a Mac user keeps 65% of every verified minute: £2.60 / €3.25 / $3.90 per 1,000 minutes (£0.0026 a minute in pounds). An 8-hour working day with an ad running throughout is about £1.25. One person counts for at most 1,000 minutes of one ad a day. Nothing is paid for an idle, locked or sleeping Mac.
+- A verified minute: the whole ad on screen for 60 seconds while the Mac is awake and in use. The server checks every minute and accepts it once.
+- Advertising: businesses pay £4 / €5 / $6 per 1,000 verified minutes, from prepaid credit; nothing for unfinished or paused minutes; never more than the budget. A person reviews every ad.
+- Payouts: through Whop, from 10 in the earner's currency, after a 3-day hold. AdChanger never sees card or bank details.
+- Privacy and safety: the app never sees the screen, keystrokes, microphone, camera, app contents or browsing history, and asks for no Screen Recording or Accessibility permission. The ad can be paused, snoozed or stopped at any time. Data is stored in London (Supabase).
+- Platform: macOS 12 or later. Anyone 13 or older can earn; advertisers must be 18 or older. UK first, available worldwide.
 
 ## Pages
 
-- [Home](https://adchanger.net/): two sides. Advertisers (default): build a bar, who sees it (matched to the moment
-  on the Mac), pricing per verified minute, the advertiser app, FAQ. Earners (`?for=earner`): live earnings demo, the
-  split of a minute, the earner app (Dashboard, Wallet, Affiliate), privacy, FAQ.
-- [Privacy](https://adchanger.net/privacy): what the app can and cannot see.
-- [Terms](https://adchanger.net/terms): terms summary.
+- [Home](https://adchanger.net/): the product for advertisers (default) and for Mac users (https://adchanger.net/?for=earner), with a live demo.
+- [Earn on your Mac](https://adchanger.net/earn-money-on-mac): AdChanger pays you to show one small, still ad next to your Mac's clock: £2.60 per 1,000 verified minutes. How it works, what it pays and what it never sees.
+- [Advertise](https://adchanger.net/advertise): MacAd puts your brand next to the Mac's clock. Pay only for verified minutes on screen while someone uses their Mac: £4 per 1,000, every ad reviewed.
+- [Safety](https://adchanger.net/safety): Who runs AdChanger, which Mac permissions it asks for and never asks for, what data it keeps, how money moves through Whop, and how to stop or remove it.
+- [FAQ](https://adchanger.net/faq): Answers about AdChanger and MacAd: what a verified minute is, what it pays, how Whop payouts work, what the app never sees, advertising rules and early access.
+- [About](https://adchanger.net/about): AdChanger is a Mac app that shares advertising money with the person whose screen shows the ad. Who runs it, the principles it follows and where it stands.
+- [Privacy](https://adchanger.net/privacy): How AdChanger collects, uses, shares and protects personal data in its Mac app, MacAd and website, and how you can exercise your data protection rights.
+- [Terms](https://adchanger.net/terms): The terms governing use of AdChanger and MacAd: eligibility, how verified minutes are counted and paid, advertiser payments, ad standards and refunds.
+
+## Optional
+
+- [Full text of every page](https://adchanger.net/llms-full.txt)
