@@ -3,7 +3,7 @@
 > AdChanger is a Mac app that shows one small, still ad in the macOS menu bar, next to the clock, and pays the person
 > who shows it for every verified minute. Businesses use the same app to build the ad, choose who sees it and pay
 > only for verified minutes. Its first product is MacAd, the menu-bar ad. Operated by Yiğit Ali Kurt; contact
-> yigit@adchanger.net. Status: early access (the download is not public yet; join by email).
+> yigit@adchanger.net. Status: not launched yet (the download is not public; join the waitlist by email).
 
 ## Key facts
 
@@ -111,17 +111,17 @@ It suits people who are at a Mac for many hours a day, such as developers, desig
 
 You can stop at any time, so the simplest test is to run it for a few weeks and look at the Dashboard, which shows your earnings by day, week, month and year.
 
-## Join early access
+## Join the waitlist
 
-AdChanger is in early access: the Mac app is being built and the download is not public yet. Features, including payouts, may not all be switched on at first.
+AdChanger has not launched yet: the Mac app is being built and the download is not public yet. Features, including payouts, may not all be switched on at first.
 
-To join, email yigit@adchanger.net with the subject "Early access". The download will be on the [home page](https://adchanger.net/) as soon as it is ready.
+To join the waitlist, email yigit@adchanger.net with the subject "Waitlist". You get an email when the download is ready, and it will be on the [home page](https://adchanger.net/) the same day.
 
 ## Questions about earning
 
 ### Can I really get paid to show ads on my Mac?
 
-Yes. AdChanger shows one small ad in your Mac's menu bar and pays you 65% of what the advertiser pays for each verified minute, which is £2.60, €3.25 or $3.90 per 1,000 minutes. The app is in early access, so the download is not public yet.
+Yes. AdChanger shows one small ad in your Mac's menu bar and pays you 65% of what the advertiser pays for each verified minute, which is £2.60, €3.25 or $3.90 per 1,000 minutes. The download is not public yet.
 
 ### How much can I earn per day or per month?
 
@@ -133,7 +133,7 @@ No. A minute only counts while the Mac is awake and in use. If you are away for 
 
 ### Is AdChanger a scam?
 
-AdChanger publishes who runs it (its founder, Yiğit Ali Kurt), a contact address (yigit@adchanger.net), its prices and revenue split, its [terms](https://adchanger.net/terms) and its [privacy notice](https://adchanger.net/privacy). It never sees your bank details, pays out through Whop, and the terms set out no charge for earning. It is in early access, which it states openly.
+AdChanger publishes who runs it (its founder, Yiğit Ali Kurt), a contact address (yigit@adchanger.net), its prices and revenue split, its [terms](https://adchanger.net/terms) and its [privacy notice](https://adchanger.net/privacy). It never sees your bank details, pays out through Whop, and the terms set out no charge for earning. It has not launched yet, which it states openly.
 
 ### What do I need to start earning with AdChanger?
 
@@ -237,9 +237,9 @@ The advertiser pages in the app open only after Touch ID or your Mac's password,
 
 ## Getting started
 
-AdChanger is in early access, and the UK is its first market; advertisers can run ads anywhere in the world.
+AdChanger has not launched yet, and the UK is its first market; advertisers can run ads anywhere in the world.
 
-To start, email yigit@adchanger.net with the subject "Early access: advertising", your business name and website. The Mac app is being built and its download is not public yet.
+To join the waitlist, email yigit@adchanger.net with the subject "Waitlist: advertising", your business name and website. The Mac app is being built and its download is not public yet; you get an email when it is ready.
 
 How the earner side works is on [Earn on your Mac](https://adchanger.net/earn-money-on-mac); how the app handles people's data is on [Is AdChanger safe?](https://adchanger.net/safety).
 
@@ -285,7 +285,7 @@ The one contact address for everything, including privacy requests and complaint
 
 AdChanger's database runs on Supabase, in London. Whop handles card payments, payouts and ID checks. This website is hosted on GitHub Pages, sets no cookies and runs no analytics.
 
-AdChanger is in early access: the Mac app is being built and the download is not public yet.
+AdChanger has not launched yet: the Mac app is being built and the download is not public yet.
 
 ## Permissions the app asks for, and does not
 
@@ -432,7 +432,7 @@ Anyone aged 13 or over with a Mac, in any country, can earn; an ad only shows in
 
 ### Can I really get paid to show ads on my Mac?
 
-Yes. AdChanger pays you 65% of what an advertiser pays for each verified minute an ad is seen in your menu bar: £2.60, €3.25 or $3.90 per 1,000 minutes. The app is in early access, so the download is not public yet.
+Yes. AdChanger pays you 65% of what an advertiser pays for each verified minute an ad is seen in your menu bar: £2.60, €3.25 or $3.90 per 1,000 minutes. The download is not public yet.
 
 ### How much can I earn with AdChanger?
 
@@ -540,17 +540,17 @@ Verified minutes and spend, then how many people saw the bar, noticed it, clicke
 
 No. A person reviews every ad, its link and its page before it runs. Gambling, adult content, prescription medicines, politics and speculative crypto investments are not accepted, and adult-only products are never shown to under-18s.
 
-## Early access
+## Waitlist
 
 ### When can I download AdChanger?
 
 Soon. The Mac app is being built and the download is not public yet. It will be on the [home page](https://adchanger.net/) the day it is ready.
 
-### How do I join AdChanger early access?
+### How do I join the AdChanger waitlist?
 
-Email yigit@adchanger.net with the subject "Early access", saying whether you want to earn or advertise. The buttons on this website open that email for you.
+Email yigit@adchanger.net with the subject "Waitlist", saying whether you want to earn or advertise. The buttons on this website open that email for you. There is nothing to download yet: you get an email when the download is ready.
 
-### Does early access change how AdChanger works?
+### Will everything work from the first day?
 
 Features may change, pause or not be switched on yet, including payouts. The [terms](https://adchanger.net/terms) are kept up to date as that happens.
 
@@ -560,7 +560,7 @@ Features may change, pause or not be switched on yet, including payouts. The [te
 
 Source: https://adchanger.net/about (updated 2026-10-04)
 
-AdChanger is a Mac app that shows one small ad in the menu bar and pays the person whose Mac shows it for every verified minute. It is run by its founder, Yiğit Ali Kurt, and is in early access, with the UK as its first market.
+AdChanger is a Mac app that shows one small ad in the menu bar and pays the person whose Mac shows it for every verified minute. It is run by its founder, Yiğit Ali Kurt, and has not launched yet, with the UK as its first market.
 
 ## What AdChanger is
 
@@ -592,21 +592,21 @@ AdChanger's database runs on Supabase in London. Whop handles card payments, pay
 
 ## Where it stands
 
-AdChanger is in early access. The Mac app is being built and its download is not public yet; features, including payouts, may not all be switched on at first.
+AdChanger has not launched yet. The Mac app is being built and its download is not public yet; features, including payouts, may not all be switched on at first.
 
 The UK is the first market, with prices in pounds first (£4 per 1,000 verified minutes). Anyone with a Mac, in any country, can earn, and advertisers can run ads anywhere in the world.
 
-To join early access, email yigit@adchanger.net. How earning works is on [Earn on your Mac](https://adchanger.net/earn-money-on-mac), advertising on [Advertise](https://adchanger.net/advertise), and safety on [Is AdChanger safe?](https://adchanger.net/safety). Common questions are answered in the [FAQ](https://adchanger.net/faq).
+To join the waitlist, email yigit@adchanger.net. How earning works is on [Earn on your Mac](https://adchanger.net/earn-money-on-mac), advertising on [Advertise](https://adchanger.net/advertise), and safety on [Is AdChanger safe?](https://adchanger.net/safety). Common questions are answered in the [FAQ](https://adchanger.net/faq).
 
 ## Contact
 
-yigit@adchanger.net is the one address for everything: early access, advertising, privacy requests, reports and press.
+yigit@adchanger.net is the one address for everything: the waitlist, advertising, privacy requests, reports and press.
 
 ---
 
 # Privacy Notice
 
-Source: https://adchanger.net/privacy (updated 2026-10-04)
+Source: https://adchanger.net/privacy (updated 2026-10-05)
 
 This Privacy Notice explains what personal data AdChanger collects, why it is collected, with whom it is shared, how long it is kept and the rights available to you.
 
@@ -771,7 +771,7 @@ Our website sets no cookies, uses no local storage and runs no analytics or trac
 
 ## 14. Changes to this notice
 
-The AdChanger app is currently offered in early access, and the Service will change over time. When this notice changes, we will update the “Last updated” date at the top. If a change affects how we use your personal data, we will inform you in the app or by email before it takes effect.
+The AdChanger app is in a pre-release stage, and the Service will change over time. When this notice changes, we will update the “Last updated” date at the top. If a change affects how we use your personal data, we will inform you in the app or by email before it takes effect.
 
 ## 15. Contact
 
@@ -781,7 +781,7 @@ Questions, requests and complaints about this notice may be sent to yigit@adchan
 
 # Terms of Use
 
-Source: https://adchanger.net/terms (updated 2026-10-04)
+Source: https://adchanger.net/terms (updated 2026-10-05)
 
 These Terms of Use set out the conditions on which Earners and Advertisers may use AdChanger and MacAd.
 
@@ -791,7 +791,7 @@ These Terms of Use (the “Terms”) form an agreement between you and Yiğit Al
 
 AdChanger is a Mac application. MacAd is the product within it: a single advertisement displayed in the Mac menu bar (the “bar”). By using the app, you agree to these Terms. Our [Privacy Notice](https://adchanger.net/privacy) explains how we handle your personal data.
 
-The AdChanger app is currently offered in early access and is not yet publicly available for download. Certain features, including payouts, may be introduced, changed or suspended, or may not yet be enabled. We will keep these Terms up to date as this happens, and we encourage you to report anything that appears to be incorrect.
+The AdChanger app is in a pre-release stage and is not yet publicly available for download. Certain features, including payouts, may be introduced, changed or suspended, or may not yet be enabled. We will keep these Terms up to date as this happens, and we encourage you to report anything that appears to be incorrect.
 
 ## 2. Definitions
 
@@ -927,7 +927,7 @@ Advertisers retain all rights in their advertisements. By submitting a Campaign,
 
 ## 9. Availability and disclaimers
 
-We aim to keep AdChanger available and to count every minute accurately. However, as the Service is in early access, we do not guarantee that it will always be available, that a paid advertisement will always be displayed, or that an advertisement will reach a particular number of people or achieve a particular result.
+We aim to keep AdChanger available and to count every minute accurately. However, as the Service is in a pre-release stage, we do not guarantee that it will always be available, that a paid advertisement will always be displayed, or that an advertisement will reach a particular number of people or achieve a particular result.
 
 Further information about how we protect the Service and its users is available on our [security and safety page](https://adchanger.net/safety).
 

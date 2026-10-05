@@ -3,7 +3,7 @@
 > AdChanger is a Mac app that shows one small, still ad in the macOS menu bar, next to the clock, and pays the person
 > who shows it for every verified minute. Businesses use the same app to build the ad, choose who sees it and pay
 > only for verified minutes. Its first product is MacAd, the menu-bar ad. Operated by Yiğit Ali Kurt; contact
-> yigit@adchanger.net. Status: early access (the download is not public yet; join by email).
+> yigit@adchanger.net. Status: not launched yet (the download is not public; join the waitlist by email).
 
 ## Key facts
 
@@ -20,7 +20,7 @@
 - [Earn on your Mac](https://adchanger.net/earn-money-on-mac): AdChanger pays you to show one small, still ad next to your Mac's clock: £2.60 per 1,000 verified minutes. How it works, what it pays and what it never sees.
 - [Advertise](https://adchanger.net/advertise): MacAd puts your brand next to the Mac's clock. Pay only for verified minutes on screen while someone uses their Mac: £4 per 1,000, every ad reviewed.
 - [Safety](https://adchanger.net/safety): Who runs AdChanger, which Mac permissions it asks for and never asks for, what data it keeps, how money moves through Whop, and how to stop or remove it.
-- [FAQ](https://adchanger.net/faq): Answers about AdChanger and MacAd: what a verified minute is, what it pays, how Whop payouts work, what the app never sees, advertising rules and early access.
+- [FAQ](https://adchanger.net/faq): Answers about AdChanger and MacAd: what a verified minute is, what it pays, how Whop payouts work, what the app never sees, advertising rules and the waitlist.
 - [About](https://adchanger.net/about): AdChanger is a Mac app that shares advertising money with the person whose screen shows the ad. Who runs it, the principles it follows and where it stands.
 - [Privacy](https://adchanger.net/privacy): How AdChanger collects, uses, shares and protects personal data in its Mac app, MacAd and website, and how you can exercise your data protection rights.
 - [Terms](https://adchanger.net/terms): The terms governing use of AdChanger and MacAd: eligibility, how verified minutes are counted and paid, advertiser payments, ad standards and refunds.
