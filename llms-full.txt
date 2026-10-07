@@ -152,7 +152,7 @@ Yes. Click the bar to pause, snooze (for 1 hour, 3 hours or until tomorrow) or s
 
 # Advertise in the Mac menu bar
 
-Source: https://adchanger.net/advertise (updated 2026-10-06)
+Source: https://adchanger.net/advertise (updated 2026-10-07)
 
 MacAd puts your brand in the Mac menu bar, next to the clock, and you pay only for verified minutes: £4, €5 or $6 per 1,000, depending on your currency. A minute counts only after your whole ad has been on screen for 60 seconds while someone is using their Mac.
 
@@ -207,6 +207,8 @@ Every campaign reports verified minutes and spend, then each step people take:
 - Noticed: people whose pointer rested on the bar.
 - Clicked: people who clicked through to your page.
 - Reached your page and became customers: measured with the click ID added to your link (as mac=) and the sales your website or shop reports.
+
+To report those steps, add the AdChanger tag to your website, or send sales from your server. How, and what it collects, is on [Measure sales](https://adchanger.net/measure).
 
 A sale counts for your ad when it happens within 7 days of a click on it. If your bar carries a discount code, the app copies it for the person when they open the bar, and you must honour it.
 
@@ -268,7 +270,135 @@ Yes, cities are optional on top of countries. A city is only used where enough p
 
 ### How long does MacAd count a sale after a click?
 
-7 days. A sale counts for your ad when it happens within 7 days of a click on it, measured with the click ID on your link and the sales your website or shop reports.
+7 days. A sale counts for your ad when it happens within 7 days of a click on it, measured with the click ID on your link and the sales your website or shop reports ([Measure sales](https://adchanger.net/measure)).
+
+---
+
+# Measure sales from MacAd
+
+Source: https://adchanger.net/measure (updated 2026-10-07)
+
+The AdChanger tag tells AdChanger what happens on your website after someone clicks your MacAd bar: they arrived, stayed, looked around, added to cart or bought. A sale counts for your ad when it happens within 7 days of the last click on it.
+
+## How it works
+
+When someone clicks your bar, the AdChanger app opens your link with a click ID added to it, for example ?mac=k3x9q2m7v4p8z1aa. The tag on your page reads that ID and reports what the visitor does, so the results in the app can show which clicks became customers.
+
+- Visitors who did not arrive from a MacAd click are ignored: without a click ID the tag sends nothing.
+- The tag loads without holding up your page, adds no visible element and never lets an error of its own reach your page.
+- If a visitor clicks your bar more than once, the most recent click gets the credit.
+
+## Paste the tag
+
+Put these lines in the <head> of every page of your website, or add them through your tag manager. Replace pk_your_key with your site key: in the AdChanger app, open Advertise, then Measure sales.
+
+```html
+<script>
+  window.adchanger = window.adchanger || function () { (adchanger.q = adchanger.q || []).push(arguments); };
+</script>
+<script async src="https://adchanger.net/tag.js" data-key="pk_your_key"></script>
+```
+
+The site key starts with pk_ and is made to sit in your page's code: it can only report events, and it cannot read your results. The first line lets you call adchanger() before the tag has finished loading; those calls are sent once it has.
+
+With only these lines in place, the tag reports three things on its own:
+
+- Arrived: the visitor reached your page from a MacAd click.
+- Stayed 30 seconds: your page was on screen for 30 seconds (time in a background tab does not count).
+- Looked around: the visitor scrolled at least half-way down the page, or opened a second page of your site.
+
+If your site uses a Content Security Policy, allow https://adchanger.net/tag.js as a script source and https://adidmymsbpzrumtytsmg.supabase.co/functions/v1/measure/event as a connect source.
+
+## Mark add-to-cart and purchases
+
+Call these where they happen: the first when something is added to the cart, the second on the page that confirms a finished order.
+
+```js
+adchanger("add_to_cart");
+
+adchanger("purchase", { order_id: "order-1234", value: 49.99, currency: "GBP" });
+```
+
+- order_id: your own order number, up to 128 characters, so that AdChanger can tell one order from another and count each order once.
+- value: the order total in ordinary units, such as 49.99. It is sent as minor units (4999).
+- currency: GBP, USD or EUR. With any other currency the sale is still counted, without its value.
+
+Send no names, email addresses or other details about the customer: the tag accepts only these three fields and drops anything else.
+
+## Shopify
+
+Paste the tag into your theme (Online Store, Themes, Edit code, theme.liquid, inside <head>) so visits are measured.
+
+Shopify does not run ordinary scripts on its checkout and order status pages. It runs custom pixels there instead, in a separate frame where the tag cannot see your shop's address. To report the sale there, add a custom pixel under Settings, Customer events, with the code below, and set its customer privacy permission to match your consent banner. It reads the click ID that the tag stored (so it reports sales only from visitors who gave consent) and sends the order number, total and currency.
+
+```js
+analytics.subscribe("checkout_completed", async (event) => {
+  const mac = await browser.cookie.get("_adchanger_mac");
+  if (!/^[a-z0-9]{12,32}$/.test(mac || "")) return;
+  const checkout = event.data.checkout;
+  const sale = { kind: "purchase", at: event.timestamp, order_id: String(checkout.order?.id ?? checkout.token) };
+  if (["GBP", "USD", "EUR"].includes(checkout.currencyCode)) {
+    sale.value_minor = Math.round(Number(checkout.totalPrice.amount) * 100);
+    sale.currency = checkout.currencyCode;
+  }
+  fetch("https://adidmymsbpzrumtytsmg.supabase.co/functions/v1/measure/event", {
+    method: "POST",
+    keepalive: true,
+    headers: { "content-type": "text/plain" },
+    body: JSON.stringify({ key: "pk_your_key", mac, events: [sale] }),
+  });
+});
+```
+
+Sales from visitors who did not consent can still be reported from your server, as described next, for example with the discount code on your bar.
+
+## Sales the browser never sees
+
+For sales made by phone, in an app, through a subscription renewal or anywhere the tag cannot run, your server can report the sale directly:
+
+```sh
+curl -X POST https://adidmymsbpzrumtytsmg.supabase.co/functions/v1/measure/conversion \
+  -H "Authorization: Bearer $ADCHANGER_SECRET_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "idempotency_key": "order-1234",
+    "type": "purchase",
+    "occurred_at": "2026-10-07T14:30:00Z",
+    "click_id": "k3x9q2m7v4p8z1aa",
+    "value_minor": 4999,
+    "currency": "GBP"
+  }'
+```
+
+- Authorization: your secret key, which starts with sk_. Keep it on your server only: never put it in a web page, an app or a public repository. If you think it has leaked, email yigit@adchanger.net at once.
+- idempotency_key: use the same order number you pass as order_id to adchanger("purchase") on your site (here "order-1234"), so an order reported by both the tag and your server is counted only once. Sending the same key again never counts the sale twice, so a retry is safe.
+- occurred_at: when the sale happened, as an ISO 8601 time.
+- click_id or discount_code: the click ID (from your own records or the _adchanger_mac cookie), or the discount code on your bar that the customer used. One of the two is required.
+- value_minor and currency: the total in minor units (4999 for 49.99) and GBP, USD or EUR.
+
+## Consent and privacy
+
+Without consent, the tag reads the click ID from the page's address and reports what happens during that page view. It stores nothing on the visitor's device and reads nothing from it, so in our understanding it does not need cookie consent under the UK and EU rules on storage (PECR and the ePrivacy Directive). This is not legal advice: you remain responsible for your own consent banner and privacy notice.
+
+Remembering a click across pages and days needs storage, so it needs consent. Only after consent does the tag set one first-party cookie on your domain:
+
+- Name: _adchanger_mac. Value: the click ID and nothing else.
+- Lifetime: 7 days, the attribution window. It is set only on the page the click arrived on, so it never extends the window.
+- Scope: your site only (first-party, SameSite=Lax, Secure on https).
+
+Tell the tag about consent in one of two ways: add data-consent="granted" to the tag's script element when your consent tool loads it only after consent, or call adchanger("consent", true) when the visitor agrees. If consent is given after the visitor arrived, the click is stored at that moment. Call adchanger("consent", false) when consent is withdrawn and the cookie is deleted.
+
+The tag never uses local storage, never fingerprints a device and never sets third-party cookies.
+
+## What the tag sends
+
+- Always: your site key, the click ID, the kind of event and its time.
+- With some events: how many seconds the page was on screen, how far down it was scrolled, and for a sale its order number, value and currency.
+- Like any request on the web, the request itself shows our servers (hosted by Supabase) the visitor's IP address and browser; the tag adds nothing more.
+
+The tag never sends names, email addresses, postal addresses, phone numbers, card or bank details, what is on your pages, their addresses, or anything the visitor types.
+
+In the app you see totals only, never individual visitors. How AdChanger handles personal data is set out in the [privacy notice](https://adchanger.net/privacy); the advertising side is on [Advertise](https://adchanger.net/advertise).
 
 ---
 
@@ -399,7 +529,7 @@ No. AdChanger does not sell data or share it with ad networks or data brokers. A
 
 # Frequently asked questions
 
-Source: https://adchanger.net/faq (updated 2026-10-06)
+Source: https://adchanger.net/faq (updated 2026-10-07)
 
 AdChanger is a Mac app that shows one small ad in the menu bar and pays the person who shows it for every verified minute. Advertisers pay £4, €5 or $6 per 1,000 verified minutes; the person showing the ad keeps 65%.
 
@@ -513,7 +643,7 @@ Nothing that identifies you. Advertisers see totals only, and any group of fewer
 
 ### Does the AdChanger website use cookies?
 
-No. adchanger.net sets no cookies, uses no local storage and runs no analytics or tracking.
+No. adchanger.net sets no cookies, uses no local storage and runs no analytics or tracking. Advertisers who add the AdChanger tag to their own sites may set one cookie there, only with your consent, holding just the click ID for 7 days ([how it works](https://adchanger.net/measure)).
 
 ### Can under-18s use AdChanger?
 
@@ -607,7 +737,7 @@ yigit@adchanger.net is the one address for everything: the waitlist, advertising
 
 # Privacy Notice
 
-Source: https://adchanger.net/privacy (updated 2026-10-06)
+Source: https://adchanger.net/privacy (updated 2026-10-07)
 
 This Privacy Notice explains what personal data AdChanger collects, why it is collected, with whom it is shared, how long it is kept and the rights available to you.
 
@@ -634,7 +764,7 @@ The Service is designed to process as little personal data as possible. In summa
 - Information you provide about yourself is optional. It is stored as fixed choices from a predefined list; any words you type yourself remain on your Mac.
 - Advertisers receive aggregated totals only. They never receive your name, your email address or a list of individuals.
 - We do not sell personal data, and we do not share it with advertising networks or data brokers.
-- Our website sets no cookies and runs no analytics.
+- Our website sets no cookies and runs no analytics. Advertisers who use the AdChanger tag on their own websites may, with your consent, set one cookie there that holds only a click identifier for 7 days (section 5.5).
 
 ## 4. Information we never collect
 
@@ -677,37 +807,47 @@ When you click a bar, we record the click and assign it a random identifier. The
 
 Purpose: to allow Advertisers to pay for results they can verify, and to show you the advertisements you have clicked. Legal basis: performance of our contract with you, and our legitimate interests.
 
-### 5.5 Your answers (optional)
+### 5.5 The AdChanger tag on Advertisers’ websites
+
+An Advertiser may add the AdChanger tag to its own website. If you arrive there from a bar, the tag sends us the click identifier from the page address, the kind of event (arriving, viewing the page for 30 seconds, scrolling or viewing a second page, adding to a basket, purchasing), when it happened, how long the page was viewed and how far it was scrolled, and, for a purchase, the Advertiser’s order number, the order value and its currency. As with any request on the internet, our servers also receive your IP address and browser details when the tag sends this information. The tag sends nothing if you did not arrive from a bar.
+
+The tag stores nothing on your device unless the Advertiser’s website has obtained your consent. Only then does it set one first-party cookie, named _adchanger_mac, on the Advertiser’s website. It holds the click identifier and nothing else, expires after 7 days and is deleted if you withdraw your consent. The tag does not use local storage, fingerprinting or third-party cookies, and it never sends your name, email address, postal address, payment details, the contents or addresses of the pages you view, or anything you type.
+
+An Advertiser may also report a sale to us from its own systems, identified by the click identifier or by the discount code shown in its bar, together with the order value and currency.
+
+Purpose: to tell an Advertiser how many clicks on its bar led to visits and sales, within 7 days of the click. Legal basis: our legitimate interest, and that of Advertisers, in measuring the results of advertising. Consent for the cookie is collected by the Advertiser’s website, and the Advertiser’s own privacy notice also applies there. Advertisers see these results only as totals.
+
+### 5.6 Your answers (optional)
 
 Information you choose to provide about what you do on your Mac, your interests, what you plan to buy, life events such as moving house, and subjects on which you never wish to see advertisements. These answers are sent as fixed choices from our predefined list. Any words you type in your own answers remain on your Mac. Purchase plans carry less weight after 60 days and cease to be taken into account after 120 days.
 
 Purpose: to show you advertisements that are relevant to you. Legal basis: your consent. Providing answers is optional, and you may change or clear them in Settings at any time.
 
-### 5.6 The application in use (the “moment”)
+### 5.7 The application in use (the “moment”)
 
 On your Mac, the app checks which application you are currently using, for example a coding tool or a design tool, so that it can select a bar that fits. The identity of that application never leaves your Mac. Our server receives only two yes-or-no values: whether the moment was used to select the bar, and whether the selected bar matched it. One selection in five deliberately leaves the moment out, so that we can measure whether it improves relevance.
 
 Purpose: to select a bar suited to what you are doing and to measure whether doing so helps. Legal basis: our legitimate interest in showing relevant advertisements. You may switch this off in Settings under “Match the bar to what I’m doing”.
 
-### 5.7 Learning on your Mac
+### 5.8 Learning on your Mac
 
 While your answers are in use, the app also learns from your interactions with its own bar: which bars you rest on, open, click or pass over. This information remains on your Mac, carries half as much weight every 30 days and is erased when you clear your answers. It never relates to anything outside AdChanger’s own bar.
 
 Purpose: to refine which bars are shown to you. Legal basis: this processing takes place only on your Mac and only while your answers, which rely on your consent, are in use; it ends when you clear them.
 
-### 5.8 Earnings and payouts
+### 5.9 Earnings and payouts
 
 The amount you earned each minute, the amounts pending and available, your withdrawals and the identifier of your Whop account. If you use an affiliate code, which code you used and when. We never see or store your bank or card details; Whop holds them.
 
 Purpose: to pay you the correct amount, exactly once. Legal basis: performance of our contract with you, and our legal obligation to keep financial records.
 
-### 5.9 Advertiser information
+### 5.10 Advertiser information
 
 The business name, website and billing country; the permissions of each member of the Advertiser’s team; Campaigns, bar images, links, discount codes, budgets and review decisions; and the amount and Whop reference of each payment. Card details are provided to Whop and never to us. If an Advertiser offers gift codes to Earners, we keep those codes confidential until an Earner exchanges earnings for one.
 
 Purpose: to operate Advertiser accounts and Campaigns and to record payments. Legal basis: performance of our contract with the Advertiser, and our legal obligation to keep financial records.
 
-### 5.10 Bug reports and correspondence
+### 5.11 Bug reports and correspondence
 
 If you submit a bug report from the app, we receive what you write and any screenshots or videos you choose to attach. If you email us, we receive your message and your email address.
 
@@ -767,6 +907,8 @@ Further information is available on our [security and safety page](https://adcha
 ## 13. Cookies and similar technologies
 
 Our website sets no cookies, uses no local storage and runs no analytics or tracking. As with any web host, GitHub receives your IP address and browser details when it delivers a page to you. The download and email buttons open your own email application; nothing is sent until you choose to send it.
+
+The AdChanger tag that Advertisers may add to their own websites is described in section 5.5. It sets a cookie only on the Advertiser’s website, only after you consent there, and only for 7 days; it never sets a cookie on adchanger.net.
 
 ## 14. Changes to this notice
 
