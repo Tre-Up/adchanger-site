@@ -13,7 +13,7 @@
 - Advertising: businesses pay £4 / €5 / $6 per 1,000 verified minutes, from prepaid credit; nothing for unfinished or paused minutes; never more than the budget. A person reviews every ad.
 - Payouts: through Whop, from 10 in the earner's currency, after a 3-day hold. AdChanger never sees card or bank details.
 - Privacy and safety: the app never sees the screen, keystrokes, microphone, camera, app contents or browsing history, and asks for no Screen Recording or Accessibility permission. The ad can be paused, snoozed or stopped at any time. Data is stored in London (Supabase).
-- Platform: macOS 12 or later. Anyone 13 or older can earn; advertisers must be 18 or older. UK first, available worldwide.
+- Platform: macOS 12 or later. AdChanger is for people 18 or older, earners and advertisers alike. UK first, available worldwide.
 
 ## Pages
 

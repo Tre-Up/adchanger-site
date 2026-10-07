@@ -13,11 +13,11 @@
 - Advertising: businesses pay £4 / €5 / $6 per 1,000 verified minutes, from prepaid credit; nothing for unfinished or paused minutes; never more than the budget. A person reviews every ad.
 - Payouts: through Whop, from 10 in the earner's currency, after a 3-day hold. AdChanger never sees card or bank details.
 - Privacy and safety: the app never sees the screen, keystrokes, microphone, camera, app contents or browsing history, and asks for no Screen Recording or Accessibility permission. The ad can be paused, snoozed or stopped at any time. Data is stored in London (Supabase).
-- Platform: macOS 12 or later. Anyone 13 or older can earn; advertisers must be 18 or older. UK first, available worldwide.
+- Platform: macOS 12 or later. AdChanger is for people 18 or older, earners and advertisers alike. UK first, available worldwide.
 
 # Earn money from your Mac with one small ad in the menu bar
 
-Source: https://adchanger.net/earn-money-on-mac (updated 2026-10-04)
+Source: https://adchanger.net/earn-money-on-mac (updated 2026-10-06)
 
 AdChanger is a Mac app that shows one small, still ad in your menu bar, next to the clock, and pays you for every minute it is seen while you use your Mac. Advertisers pay £4, €5 or $6 per 1,000 verified minutes and you keep 65%: £2.60 per 1,000 minutes in pounds.
 
@@ -74,10 +74,10 @@ Whop is the only payment route today. Stripe, Wise and PayPal are planned.
 
 - A Mac with macOS 12 Monterey or later.
 - Room in the menu bar for one bar, 180 points wide. If the menu bar is too full, the app tells you, and nothing counts until there is room.
-- Your real age band. You must be 13 or older.
+- You must be 18 or over.
 - One account per person. Only one of your Macs earns at a time.
 
-People aged 13 to 17 can earn. They never see ads for alcohol, gambling, tobacco, dating or adult content, and in the UK and Europe their optional answers start switched off. Whether a payout can reach someone under 18 depends on Whop's rules.
+Your answers are what advertisers pay for. You can switch them off in Settings at any time; while they are off, you see no ads and earn nothing.
 
 ## What it never does
 
@@ -138,7 +138,7 @@ AdChanger publishes who runs it (its founder, Yiğit Ali Kurt), a contact addres
 
 ### What do I need to start earning with AdChanger?
 
-A Mac with macOS 12 or later, room for one bar in the menu bar, and an age of 13 or over. To be paid, you also need a Whop account, which checks your ID once.
+A Mac with macOS 12 or later, room for one bar in the menu bar, and an age of 18 or over. To be paid, you also need a Whop account, which checks your ID once.
 
 ### Can I earn from AdChanger outside the UK?
 
@@ -152,7 +152,7 @@ Yes. Click the bar to pause, snooze (for 1 hour, 3 hours or until tomorrow) or s
 
 # Advertise in the Mac menu bar
 
-Source: https://adchanger.net/advertise (updated 2026-10-04)
+Source: https://adchanger.net/advertise (updated 2026-10-06)
 
 MacAd puts your brand in the Mac menu bar, next to the clock, and you pay only for verified minutes: £4, €5 or $6 per 1,000, depending on your currency. A minute counts only after your whole ad has been on screen for 60 seconds while someone is using their Mac.
 
@@ -224,7 +224,7 @@ AdChanger does not accept ads for:
 - politics or elections;
 - speculative crypto or token investments.
 
-Ads for things only adults may buy, such as alcohol or dating, are never shown to anyone under 18. Sensitive subjects get a closer look in review.
+Everyone who sees your bar is 18 or over. Sensitive subjects, such as alcohol or dating, get a closer look in review.
 
 You must be 18 or over, be allowed to act for the business, and have the right to every word, logo and image in your ad. The full rules are in the [terms](https://adchanger.net/terms).
 
@@ -274,7 +274,7 @@ Yes, cities are optional on top of countries. A city is only used where enough p
 
 # Is AdChanger safe?
 
-Source: https://adchanger.net/safety (updated 2026-10-04)
+Source: https://adchanger.net/safety (updated 2026-10-06)
 
 Yes: AdChanger is built to see as little as possible. It asks for no Screen Recording or Accessibility permission, never sees your screen, keystrokes, microphone, camera, app contents or browsing history, and never sees card or bank details, which stay with Whop.
 
@@ -335,7 +335,7 @@ A person reviews every ad, its link and the page it opens before it runs. An app
 
 AdChanger does not accept ads for gambling or betting, adult sexual content or services, prescription medicines, politics or elections, or speculative crypto or token investments.
 
-Ads for things only adults may buy, such as alcohol or dating, are never shown to anyone under 18. People aged 13 to 17 never see ads for alcohol, gambling, tobacco, dating or adult content.
+AdChanger is for people 18 and over, so everyone who sees an ad is an adult. Ads on subjects such as alcohol or dating get a closer look.
 
 Every ad is a still image with a secure https:// link: no animation, no sound and no pop-ups. A link opens only when you click the bar.
 
@@ -399,7 +399,7 @@ No. AdChanger does not sell data or share it with ad networks or data brokers. A
 
 # Frequently asked questions
 
-Source: https://adchanger.net/faq (updated 2026-10-04)
+Source: https://adchanger.net/faq (updated 2026-10-06)
 
 AdChanger is a Mac app that shows one small ad in the menu bar and pays the person who shows it for every verified minute. Advertisers pay £4, €5 or $6 per 1,000 verified minutes; the person showing the ad keeps 65%.
 
@@ -427,7 +427,7 @@ AdChanger works on Macs with macOS 12 Monterey or later. It needs room in the me
 
 ### Who can use AdChanger, and where?
 
-Anyone aged 13 or over with a Mac, in any country, can earn; an ad only shows in the countries its advertiser picked. Advertisers must be 18 or over and can run ads anywhere in the world. The UK is AdChanger's first market.
+Anyone aged 18 or over with a Mac, in any country, can earn; an ad only shows in the countries its advertiser picked. Advertisers can run ads anywhere in the world. The UK is AdChanger's first market.
 
 ## Earning
 
@@ -517,7 +517,7 @@ No. adchanger.net sets no cookies, uses no local storage and runs no analytics o
 
 ### Can under-18s use AdChanger?
 
-People aged 13 to 17 can earn, but never see ads for alcohol, gambling, tobacco, dating or adult content. In the UK and Europe their optional answers start switched off. Under-13s cannot use the app.
+No. AdChanger is for people 18 and over, and Whop checks your ID before your first payout.
 
 ## Advertising
 
@@ -559,7 +559,7 @@ Features may change, pause or not be switched on yet, including payouts. The [te
 
 # About AdChanger
 
-Source: https://adchanger.net/about (updated 2026-10-04)
+Source: https://adchanger.net/about (updated 2026-10-07)
 
 AdChanger is a bootstrapped advertising startup founded in September 2026 by Yiğit Ali Kurt. Its working pre-launch native macOS app creates a new menu-bar advertising surface, with the UK as its first market.
 
@@ -607,7 +607,7 @@ yigit@adchanger.net is the one address for everything: the waitlist, advertising
 
 # Privacy Notice
 
-Source: https://adchanger.net/privacy (updated 2026-10-05)
+Source: https://adchanger.net/privacy (updated 2026-10-06)
 
 This Privacy Notice explains what personal data AdChanger collects, why it is collected, with whom it is shared, how long it is kept and the rights available to you.
 
@@ -655,7 +655,7 @@ For each category of personal data below, we set out the purpose for which we us
 
 ### 5.1 Account information
 
-Your email address and, if you sign in with Google or GitHub, the basic profile information that service provides, such as your name. We also collect your age band (13 to 15, 16 or 17, or 18 or over), the date you joined and your country. Your country is derived from the network connection your Mac uses or, where that is not available, from your Mac’s region setting. We do not store your IP address in our database.
+Your email address and, if you sign in with Google or GitHub, the basic profile information that service provides, such as your name. We also record that you confirmed you are 18 or over, the date you joined and your country. Your country is derived from the network connection your Mac uses or, where that is not available, from your Mac’s region setting. We do not store your IP address in our database.
 
 Purpose: to operate your account, protect your earnings and apply the age rules described in section 11. Legal basis: performance of our contract with you.
 
@@ -752,13 +752,11 @@ To exercise any of these rights, please write to yigit@adchanger.net from the em
 
 If you are dissatisfied with how we handle your personal data, you have the right to lodge a complaint with the Information Commissioner’s Office (ico.org.uk) in the United Kingdom, or with the data protection authority in your country of residence in the European Union. We would, however, welcome the opportunity to address your concerns first.
 
-## 11. Children and young people
+## 11. Age
 
-- You must be 13 or older to use AdChanger. If you indicate that you are under 13, the app stops and stores nothing.
-- People aged 13 to 17 may earn. They are never shown advertisements for alcohol, gambling, tobacco, dating or adult content.
-- In the United Kingdom and Europe, answers are switched off by default for users under 18. They are shown general advertisements unless they choose to switch answers on.
-- You must be 18 or older to advertise or to exchange earnings for a brand’s gift code.
-- Whether, and how, a payout can be made to a person under 18 depends on Whop’s rules.
+- AdChanger is for people 18 or older. We do not knowingly collect personal data from anyone younger; if we learn that an account belongs to someone under 18, we close it and delete their answers.
+- Whop verifies your identity before your first payout.
+- You may switch off the use of your answers in Settings at any time. While they are off, you are shown no advertisements and earn nothing, because advertisers pay for advertisements matched to people.
 
 ## 12. Security
 
@@ -782,7 +780,7 @@ Questions, requests and complaints about this notice may be sent to yigit@adchan
 
 # Terms of Use
 
-Source: https://adchanger.net/terms (updated 2026-10-05)
+Source: https://adchanger.net/terms (updated 2026-10-06)
 
 These Terms of Use set out the conditions on which Earners and Advertisers may use AdChanger and MacAd.
 
@@ -808,9 +806,9 @@ In these Terms, the following words have the meanings given below:
 
 ## 3. Eligibility and accounts
 
-- You must be 13 or older to use AdChanger. You must state your real age band, as the rules that apply to users under 18 depend on it.
+- You must be 18 or older to use AdChanger, and you confirm this when you start. Whop verifies your identity before your first payout.
 - Anyone with a Mac, in any country, may earn. An advertisement is shown only in the countries its Advertiser has selected, so the advertisements available to you depend on where you are.
-- You must be 18 or older to advertise, and you must be authorised to act for the business you advertise.
+- To advertise, you must be authorised to act for the business you advertise.
 - Each person may hold one Account. You must keep access to your email and sign-in method secure, and you are responsible for activity on your Account.
 
 ## 4. Terms for Earners
@@ -849,7 +847,7 @@ You may add another person’s affiliate code once. While the code is active, yo
 
 ### 4.6 Exchanging earnings for gift codes
 
-Where a brand offers it, Earners aged 18 or older may exchange part of their available earnings for that brand’s gift code, which is worth more than the amount exchanged. The amount is deducted from your balance immediately. The gift code is issued by the brand, may be used only with that brand and is subject to the brand’s terms.
+Where a brand offers it, Earners may exchange part of their available earnings for that brand’s gift code, which is worth more than the amount exchanged. The amount is deducted from your balance immediately. The gift code is issued by the brand, may be used only with that brand and is subject to the brand’s terms.
 
 ## 5. Invalid activity
 
@@ -887,7 +885,7 @@ We do not accept advertisements for:
 - politics or elections; or
 - speculative cryptocurrency or token investments.
 
-Advertisements for products or services that only adults may buy, such as alcohol or dating, are never shown to anyone under 18. Advertisements on sensitive subjects receive closer scrutiny during review.
+Advertisements on sensitive subjects, such as alcohol or dating, receive closer scrutiny during review.
 
 ### 6.4 Payment and budgets
 
