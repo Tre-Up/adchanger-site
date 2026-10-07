@@ -2,8 +2,9 @@
 
 > AdChanger is a Mac app that shows one small, still ad in the macOS menu bar, next to the clock, and pays the person
 > who shows it for every verified minute. Businesses use the same app to build the ad, choose who sees it and pay
-> only for verified minutes. Its first product is MacAd, the menu-bar ad. Operated by Yiğit Ali Kurt; contact
-> yigit@adchanger.net. Status: not launched yet (the download is not public; join the waitlist by email).
+> only for verified minutes. Its first product is MacAd, the menu-bar ad. AdChanger is a bootstrapped startup
+> founded in September 2026 by Yiğit Ali Kurt; contact yigit@adchanger.net. Status: pre-launch (the native Mac app and
+> serving foundation are working; the public download is not live yet; join the waitlist by email).
 
 ## Key facts
 
@@ -560,7 +561,7 @@ Features may change, pause or not be switched on yet, including payouts. The [te
 
 Source: https://adchanger.net/about (updated 2026-10-04)
 
-AdChanger is a Mac app that shows one small ad in the menu bar and pays the person whose Mac shows it for every verified minute. It is run by its founder, Yiğit Ali Kurt, and has not launched yet, with the UK as its first market.
+AdChanger is a bootstrapped advertising startup founded in September 2026 by Yiğit Ali Kurt. Its working pre-launch native macOS app creates a new menu-bar advertising surface, with the UK as its first market.
 
 ## What AdChanger is
 
@@ -592,7 +593,7 @@ AdChanger's database runs on Supabase in London. Whop handles card payments, pay
 
 ## Where it stands
 
-AdChanger has not launched yet. The Mac app is being built and its download is not public yet; features, including payouts, may not all be switched on at first.
+AdChanger is pre-launch. The native Mac app, campaign builder, serving stack and measurement foundation are working, but the public download is not live yet and the first live advertiser pilots are still ahead.
 
 The UK is the first market, with prices in pounds first (£4 per 1,000 verified minutes). Anyone with a Mac, in any country, can earn, and advertisers can run ads anywhere in the world.
 
