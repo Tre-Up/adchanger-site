@@ -2,8 +2,9 @@
 
 > AdChanger is a Mac app that shows one small, still ad in the macOS menu bar, next to the clock, and pays the person
 > who shows it for every verified minute. Businesses use the same app to build the ad, choose who sees it and pay
-> only for verified minutes. Its first product is MacAd, the menu-bar ad. Operated by Yiğit Ali Kurt; contact
-> yigit@adchanger.net. Status: not launched yet (the download is not public; join the waitlist by email).
+> only for verified minutes. Its first product is MacAd, the menu-bar ad. AdChanger is a bootstrapped startup
+> founded in September 2026 by Yiğit Ali Kurt; contact yigit@adchanger.net. Status: pre-launch (the native Mac app and
+> serving foundation are working; the public download is not live yet; join the waitlist by email).
 
 ## Key facts
 
